@@ -107,6 +107,14 @@ h3{
   font-family: "lato";
 }
 
+.about p, .attend p{
+  font-family: "Lato", sans-serif;
+  font-size: 18px;
+  color: #000;
+  line-height: 30px;
+
+}
+
 .button-ban{
   z-index: 3432423;
   display: inline-block;
@@ -333,19 +341,6 @@ ol{
   list-style: decimal-leading-zero;
   font-size: 18px;
 }
-
-.cd-container {
-  /* this class is used to give a max-width to the element it is applied to, and center it horizontally when it reaches that max-width */
-  width: 90%;
-  max-width: 1170px;
-  margin: 0 auto;
-}
-.cd-container::after {
-  /* clearfix */
-  content: '';
-  display: table;
-  clear: both;
-}
 .outer{
   z-index: 9999;
   position: relative;
@@ -356,13 +351,26 @@ ol{
   margin: 30px;
   display: inline-block;
 }
-
-section{
-  height: 50%;
-}
 .attend{
   background-color: #013247;
   color: #fff;
+  padding: 100px;
+}
+
+.ambi{
+  height: 50px;
+}
+
+.sponsors{
+  padding-bottom: 50px;
+}
+
+.footer{
+  background-color: #0c0e11;
+  height: 100px;
+}
+.about, .attend{
+  margin: 100px 0 100px 0;
 }
 
 b{
@@ -375,147 +383,11 @@ b{
   font-weight: 300;
   line-height: 25px;
 }
-#cd-timeline {
-  position: relative;
-  padding: 2em 0;
-  margin-top: 2em;
-  margin-bottom: 2em;
-}
-#cd-timeline::before {
-  /* this is the vertical line */
-  content: '';
-  position: absolute;
-  top: 0;
-  left: 18px;
-  height: 100%;
-  width: 2px;
-  background: #dfdfdf;
-  z-index: -38748934;
-}
-@media only screen and (min-width: 1170px) {
-  #cd-timeline {
-    margin-top: 3em;
-    margin-bottom: 3em;
-  }
-  #cd-timeline::before {
-    left: 50%;
-    margin-left: -2px;
-  }
-}
 
-.faq h1{
+
+.faq h1, .about h1, .attend h1, .sponsors h1{
   color: #000;
+  font-family: "Lato", sans-serif !important;
+  margin-bottom: 30px;
 
-}
-
-.cd-timeline-block {
-  position: relative;
-  margin: 2em 0;
-}
-.cd-timeline-block::after {
-  clear: both;
-  content: "";
-  display: table;
-}
-.cd-timeline-block:first-child {
-  margin-top: 0;
-}
-.cd-timeline-block:last-child {
-  margin-bottom: 0;
-}
-@media only screen and (min-width: 1170px) {
-  .cd-timeline-block {
-    margin: 4em 0;
-  }
-  .cd-timeline-block:first-child {
-    margin-top: 0;
-  }
-  .cd-timeline-block:last-child {
-    margin-bottom: 0;
-  }
-}
-
-.cd-timeline-img {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 40px;
-  height: 40px;
-  border-radius: 50%;
-}
-.cd-timeline-img img {
-  display: block;
-  width: 24px;
-  height: 24px;
-  position: relative;
-  left: 50%;
-  top: 50%;
-  margin-left: -12px;
-  margin-top: -12px;
-}
-.cd-timeline-img.cd-picture {
-  background: #281f27;
-}
-@media only screen and (min-width: 1170px) {
-  .cd-timeline-img {
-    width: 60px;
-    height: 60px;
-    left: 50%;
-    margin-left: -30px;
-  }
-
-}
-
-.cd-timeline-content {
-  position: relative;
-  margin-left: 60px;
-  background: #fff;
-  border-radius: 0.25em;
-  padding: 1em;
-  border: 1px solid #dfdfdf;
-  transition: all 0.5s ease;
-  z-index: 34;
-}
-
-.cd-timeline-content:hover{
-  box-shadow: 0px 0px 5px #dfdfdf;
-  transform: scale(1.01);
-}
-.cd-timeline-content::after {
-  clear: both;
-  content: "";
-  display: table;
-}
-.cd-timeline-content h2 {
-  color: #303e49;
-}
-.cd-timeline-content p {
-  margin: 1em 0;
-  line-height: 1.6;
-}
-@media only screen and (min-width: 1170px) {
-  .cd-timeline-content {
-    margin-left: 0;
-    padding: 1.6em;
-    width: 45%;
-  }
-  .cd-timeline-content::before {
-    top: 24px;
-    left: 100%;
-    border-color: transparent;
-    border-left-color: #ffffff;
-  }
-  .cd-timeline-block:nth-child(even) .cd-timeline-content {
-    float: right;
-  }
-  .cd-timeline-block:nth-child(even) .cd-timeline-content::before {
-    top: 24px;
-    left: auto;
-    right: 100%;
-    border-color: transparent;
-    border-right-color: #ffffff;
-  }
-  .cssanimations .cd-timeline-content.is-hidden {
-    visibility: hidden;
-  }
 }
