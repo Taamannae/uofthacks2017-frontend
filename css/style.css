@@ -5,6 +5,14 @@
   letter-spacing: 1px;
 }
 
+.nav{
+  font-family: 'Montserrat', sans-serif;
+  text-transform: uppercase;
+  font-weight: 400;
+  letter-spacing: 2px;
+
+}
+
 .navbar{
   border: none;
   background: transparent;
