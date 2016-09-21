@@ -20,6 +20,12 @@
   margin-top: 160px;
 }
 
+.ground{
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+
 .navbar a{
   color: #fff !important;
 }
@@ -101,6 +107,26 @@ h3{
   font-family: "lato";
 }
 
+.button-ban{
+  z-index: 3432423;
+  display: inline-block;
+  line-height: 40px;
+  border: 1px solid #ffffff;
+  border-radius: 5px;
+  width: 100px;
+  margin: 10px;
+  background-color: transparent;
+  font-family: 'Montserrat', sans-serif;
+  color: #fff;
+  cursor: pointer;
+  transition: background-color 0.5s ease;
+
+}
+
+.button-ban:hover{
+  background-color: #013247
+}
+
 .logo{
   width: 300px;
   z-index: 9947239;
@@ -121,34 +147,6 @@ h3{
     flex-wrap: wrap;
 }
 
-.project{
-  margin: 10px;
-  width: 300px;
-  display: inline-block;
-  border: 1px solid #dfdfdf;
-  background-color: #fff;
-  transition: all 0.5s ease;
-
-}
-
-.size{
-  width: 300px;
-}
-
-.skills{
-  background-color: #eeeeee;
-  padding: 50px;
-  display: flex;
-}
-
-.skills .job{
-  width:250px;
-  min-width: 150px;
-}
-
-.skills h1{
-  font-size: 19px;
-}
 
 .frame {
   width: 500px;
@@ -165,99 +163,8 @@ svg {
 }
 
 /**
- * Paper Plane
- */
-/*Paper Plane: Container*/
-.plane-container {
-  width: 200px;
-  margin: 0px auto;
-  z-index: 3;
-}
- /*Paper Plane: Image*/
-.plane {
-  width: 100%;
-  height: 60px;
-}
-
-/*Paper Plane: Animation*/
-.plane-container {
-  -webkit-animation: paper-plane-scoping 2s alternate infinite;
-  -moz-animation: paper-plane-scoping 2s alternate infinite;
-  animation: paper-plane-scoping 2s alternate infinite;
-
-  -webkit-animation-timing-function: linear;
-  -moz-animation-timing-function: linear;
-  animation-timing-function: linear;
-}
-
-@-webkit-keyframes paper-plane-scoping {
-  0% {
-    -webkit-transform: translateY(0px);
-    -moz-transform: translateY(0px);
-    transform: translateY(0px);
-  }
-  100% {
-    -webkit-transform: translateY(100px);
-    -moz-transform: translateY(100px);
-    transform: translateY(100px);
-  }
-}
-
-.plane {
-  -webkit-animation-timing-function: ease-in-out;
-  -moz-animation-timing-function: ease-in-out;
-  animation-timing-function: ease-in-out;
-
-  -webkit-animation: paper-plane-soaring 4s forwards infinite;
-  -moz-animation: paper-plane-soaring 4s forwards infinite;
-  animation: paper-plane-soaring 4s forwards infinite;
-}
-@-webkit-keyframes paper-plane-soaring {
-  0% {
-    -webkit-transform: rotate(0deg);
-    -moz-transform: rotate(0deg);
-    transform: rotate(0deg);
-  }
-  40% {
-    -webkit-transform: rotate(15deg);
-    -moz-transform: rotate(15deg);
-    transform: rotate(15deg);
-  }
-  50% {
-    -webkit-transform: rotate(15deg);
-    -moz-transform: rotate(15deg);
-    transform: rotate(15deg);
-  }
-  60% {
-    -webkit-transform: rotate(-10deg);
-    -moz-transform: rotate(-10deg);
-    transform: rotate(-10deg);
-  }
-  70% {
-    -webkit-transform: rotate(-10deg);
-    -moz-transform: rotate(-10deg);
-    transform: rotate(-10deg);
-  }
-  100% {
-    -webkit-transform: rotate(0deg);
-    -moz-transform: rotate(0deg);
-    transform: rotate(0deg);
-  }
-}
-
-/**
  * Clouds
  */
-.clouds {
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  overflow: hidden;
-  transform: translateZ(0);
-}
-
 .cloud {
   position: absolute;
   top: 20%;
@@ -289,24 +196,28 @@ svg {
 .cloud.smaller {
   margin-right: 400px;
   width: 100px;
-  margin-top: 50px;
+  margin-top: 280px;
+  z-index: 1;
 }
 
 .cloud.small {
-  margin-right: 200px;
+  margin-right: 500px;
   width: 150px;
+  z-index: 1;
 }
 
 .cloud.big {
-  width: 500px;
-  margin-top: 50px;
-  margin-right: 150px;
+  width: 300px;
+  margin-top: 400px;
+  margin-right: 850px;
+  z-index: 1;
 }
 
 .cloud.massive {
-  width: 600px;
-  margin-top: 20px;
+  width: 200px;
+  margin-top: 150px;
   margin-right: 0px;
+  z-index: 1;
 }
 
 
@@ -333,27 +244,27 @@ svg {
 
 
 .slow {
-  -webkit-animation-duration: 9.2s;
-  -moz-animation-duration: 9.2s;
-  animation-duration: 9.2s;
+  -webkit-animation-duration: 19.2s;
+  -moz-animation-duration: 19.2s;
+  animation-duration: 19.2s;
 }
 
 .slower {
-  -webkit-animation-duration: 11.2s;
-  -moz-animation-duration: 11.2s;
-  animation-duration: 11.2s;
+  -webkit-animation-duration: 21.2s;
+  -moz-animation-duration: 21.2s;
+  animation-duration: 21.2s;
 }
 
 .slowest {
-  -webkit-animation-duration: 13.5s;
-  -moz-animation-duration: 13.5s;
-  animation-duration: 13.5s;
+  -webkit-animation-duration: 23.5s;
+  -moz-animation-duration: 23.5s;
+  animation-duration: 23.5s;
 }
 
 .super-slow {
-  -webkit-animation-duration: 20.5s;
-  -moz-animation-duration: 20.5s;
-  animation-duration: 20.5s;
+  -webkit-animation-duration: 30.5s;
+  -moz-animation-duration: 30.5s;
+  animation-duration: 30.5s;
 }
 
 @-webkit-keyframes cloud-movement {
@@ -368,13 +279,13 @@ svg {
     opacity: 0.7;
   }
   90% {
-    opacity: 0;
+    opacity: 0.4;
   }
   100% {
     opacity: 0;
-    -webkit-transform: translateX(-1000px);
-    -moz-transform: translateX(-1000px);
-    transform: translateX(-1000px);
+    -webkit-transform: translateX(-1500px);
+    -moz-transform: translateX(-1500px);
+    transform: translateX(-1500px);
   }
 }
 
@@ -411,9 +322,11 @@ svg {
   letter-spacing: 2px;
   line-height: 23px;
   color: #fff;
-  font-weight: 100;
   display: block;
-  font-size: 16px;
+  font-family: 'Montserrat', sans-serif;
+  text-transform: uppercase;
+  font-weight: 100;
+  font-size: 26px;
 }
 ol{
   font-family: "lato";
@@ -433,7 +346,35 @@ ol{
   display: table;
   clear: both;
 }
+.outer{
+  z-index: 9999;
+  position: relative;
+}
 
+.sponsor-logo{
+  height: 150px;
+  margin: 30px;
+  display: inline-block;
+}
+
+section{
+  height: 50%;
+}
+.attend{
+  background-color: #013247;
+  color: #fff;
+}
+
+b{
+  font-size: 20px;
+}
+.faq{
+  background-color: #ffffff;
+  color: #000000;
+  font-family: "Lato", sans-serif !important;
+  font-weight: 300;
+  line-height: 25px;
+}
 #cd-timeline {
   position: relative;
   padding: 2em 0;
@@ -449,6 +390,7 @@ ol{
   height: 100%;
   width: 2px;
   background: #dfdfdf;
+  z-index: -38748934;
 }
 @media only screen and (min-width: 1170px) {
   #cd-timeline {
@@ -459,6 +401,11 @@ ol{
     left: 50%;
     margin-left: -2px;
   }
+}
+
+.faq h1{
+  color: #000;
+
 }
 
 .cd-timeline-block {
