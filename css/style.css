@@ -34,6 +34,10 @@
   left: 0;
 }
 
+body{
+  overflow-x: hidden;
+}
+
 .navbar a{
   color: #fff !important;
 }
@@ -355,22 +359,19 @@ ol{
 }
 
 .sponsor-logo{
-  height: 150px;
+  max-width: 250px;
   margin: 30px;
   display: inline-block;
 }
 .attend{
   background-color: #013247;
   color: #fff;
-  padding: 100px;
-}
-
-.ambi{
-  height: 50px;
+  padding: 20px 5px 20px 5px;
 }
 
 .sponsors{
   padding-bottom: 50px;
+  text-align: center;
 }
 
 .footer{
@@ -398,4 +399,24 @@ b{
   font-family: "Lato", sans-serif !important;
   margin-bottom: 30px;
 
+}
+
+.sponsors h1{
+  text-align: left;
+}
+@media screen and(max-width:668px){
+  .sponsor-logo{
+    display: block;
+  }
+}
+
+@media screen and (max-width: 470px) {
+    .hsContainer h2{
+      font-size: 30px !important;
+      letter-spacing: 1px;
+    }
+
+    .bcg h1{
+      font-size: 20px;
+      letter-spacing: 1px;
 }
