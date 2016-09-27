@@ -17,28 +17,32 @@ $(document).ready(function(){
     }
 
 
-    $('#about').click(function() {
+    $('#about').click(function(event) {
+      event.preventDefault();
     $('html,body').animate({
         scrollTop: $("#slide-0").offset().top - 40},
         'slow');
 
 });
 
-$('#attend').click(function() {
+$('#attend').click(function(event) {
+  event.preventDefault();
 $('html,body').animate({
     scrollTop: $("#slide-2").offset().top - 40},
     'slow');
 
 });
 
-$('#sponsor').click(function() {
+$('#sponsor').click(function(event) {
+  event.preventDefault();
 $('html,body').animate({
     scrollTop: $("#slide-3").offset().top - 40},
     'slow');
 
 });
 
-$('#faq').click(function() {
+$('#faq').click(function(event) {
+  event.preventDefault();
 $('html,body').animate({
     scrollTop: $("#slide-4").offset().top - 40},
     'slow');
