@@ -197,6 +197,15 @@ svg {
   display: block;
 }
 
+
+h3{
+  font-size: 16px;
+  color: #fff !important;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: normal;
+}
+
+
 /**
  * Clouds
  */
