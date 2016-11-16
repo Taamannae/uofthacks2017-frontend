@@ -143,7 +143,7 @@ h3{
 }
 
 #uoft-name{
-  margin-left: 130px;
+  margin-left: 90px;
 }
 
 .button-ban{
@@ -450,4 +450,16 @@ b{
     .bcg h1{
       font-size: 20px;
       letter-spacing: 1px;
+}
+}
+
+
+@media screen and (max-width: 320px) {
+
+  #uoft-name{
+    margin: 90;
+    font-size: 16px;
+  }
+
+
 }
