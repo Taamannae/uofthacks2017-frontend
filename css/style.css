@@ -375,6 +375,7 @@ a, a:hover, a:focus{
   margin-left: 40px;
 }
 
+
 .bcg h1{
   letter-spacing: 2px;
   line-height: 23px;
@@ -444,6 +445,48 @@ b{
 .sponsors h1{
   text-align: left;
 }
+
+@media screen and (max-width: 767px) {
+
+.nav li{
+  text-align: center;
+}
+
+.navbar-collapse ul{
+  background-color: #001d34;
+  transition: all 0.5s ease;
+}
+
+.navbar-collapse li{
+  background-color: #001d34;
+  transition: all 0.5s ease;
+}
+
+.navbar-collapse li:hover{
+  background-color: #02335a;
+}
+
+.navbar-toggle{
+  transition: all 0.5s ease;
+}
+
+.navbar-default .navbar-toggle .icon-bar{
+  background-color: #fff;
+}
+
+.navbar-default .navbar-toggle{
+  border-color: #fff;
+}
+.navbar-default .navbar-toggle:focus, .navbar-default .navbar-toggle:hover{
+  background-color: #0d3758;
+}
+.navbar-default .navbar-collapse, .navbar-default .navbar-form{
+  border: none;
+}
+
+
+}
+
 @media screen and(max-width:668px){
   .sponsor-logo{
     display: block;
